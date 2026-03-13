@@ -1,0 +1,8 @@
+Nasi goreng - 10 - Rp20.0
+null - 0 - Rp0.0
+Api Goreng - 100 - Rp2000000.0
+Api Rebus - 20 - Rp100000.0
+Air Panas - 1 - Rp1000.0
+Air Panas - 2 - Rp2000.0
+Api Dingin - 25 - Rp625000.0
+Rumah Itu - 10 - Rp1.0E20
