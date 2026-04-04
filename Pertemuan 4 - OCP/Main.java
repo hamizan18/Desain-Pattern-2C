@@ -26,6 +26,9 @@ public class Main {
                 System.out.print("Masukkan harga satuan: ");
                 double price = scanner.nextDouble();
 
+                System.out.print("Makan ditempat(y) or takeaway(n)?: ");
+                char places = scanner.next().charAt(0);
+
                 scanner.nextLine(); // ntuk buang newline
 
                 OrderManager order = new OrderManager();
@@ -34,6 +37,7 @@ public class Main {
                 order.setPrice(price);
                 order.setQuantity(quantity);
                 order.setDiscount(discount);
+                order.setPlaces(places);
 
                 SaveOrder saveOrder = new SaveOrder(order);
                 saveOrder.saveOrder();
@@ -41,7 +45,7 @@ public class Main {
                 PrintReceipt printer = new PrintReceipt(order);
                 printer.printReceipt();
 
-                System.out.print("Order lagi? (Y/N): ");
+                System.out.print("Pesan lagi? (y/n): ");
                 validate = scanner.next().charAt(0); // ni ntuk ambil Char bukan String
 
                 scanner.nextLine(); // ntuk buang newline
@@ -50,8 +54,8 @@ public class Main {
                 System.out.println("Terima kasih telah berbelanja disinii");
                 break;
             } else {
-                System.out.print("Mohon input 'Y' atau 'N'");
-                System.out.println("Order lagi? (Y/N): ");
+                System.out.print("Mohon input 'y' atau 'n'.");
+                System.out.println("Order lagi? (y/n): ");
                 validate = scanner.next().charAt(0);
             }
         }
