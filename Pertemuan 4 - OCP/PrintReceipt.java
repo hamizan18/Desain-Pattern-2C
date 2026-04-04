@@ -14,7 +14,7 @@ public class PrintReceipt {
         NumberFormat rupiah = NumberFormat.getCurrencyInstance(localeID);
         rupiah.setMaximumFractionDigits(0); // biar diujongnya gaada ,00
 
-        System.out.println("\n--- Struk Pesanan ---");
+        System.out.println("\nStruk Pesanan:");
         System.out.println("Produk\t\t\t: " + takeProduct.getProduct());
         System.out.println("Jumlah Diskon\t\t: " + takeProduct.getDiscount());
         System.out.println("Jumlah\t\t\t: " + takeProduct.getQuantity());
