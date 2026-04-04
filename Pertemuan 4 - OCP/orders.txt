@@ -6,3 +6,11 @@ Air Panas - 1 - Rp1000.0
 Air Panas - 2 - Rp2000.0
 Api Dingin - 25 - Rp625000.0
 Rumah Itu - 10 - Rp1.0E20
+Diskon: 7.0 - Obento - 5 - Rp100000.0
+Diskon: 18.0 - Hapee - 2 - Rp2000000.0
+Diskon: 12.0 - Keyboard RGB - 3 - Rp900000.0
+Diskon: 12.0 - Keyboard membran - 2 - Rp300000.0
+Diskon: 15.0 - Mouse - 5 - Rp400000.0
+Diskon: 7.0 - Moude non Gaming - 3 - Rp150000.0
+Diskon: 15.0 - Kipas Angin gaming - 3 - Rp2400000.0
+Diskon: 13.0 - Gelas Gaming - 4 - Rp80000.0

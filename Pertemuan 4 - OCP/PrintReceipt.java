@@ -1,3 +1,6 @@
+import java.text.NumberFormat;
+import java.util.Locale;
+
 public class PrintReceipt {
     OrderManager takeProduct;
 
@@ -6,10 +9,17 @@ public class PrintReceipt {
     }
 
     public void printReceipt() {
-        System.out.println("\nStruk Pesanan:");
-        System.out.println("Produk: " + takeProduct.getProduct());
-        System.out.println("Jumlah: " + takeProduct.getQuantity());
-        System.out.println("Total Harga: " + takeProduct.calculateTotal());
-        System.out.println("==========================");
+        // biarr jadi rupiah
+        Locale localeID = Locale.forLanguageTag("id-ID");
+        NumberFormat rupiah = NumberFormat.getCurrencyInstance(localeID);
+        rupiah.setMaximumFractionDigits(0); // biar diujongnya gaada ,00
+
+        System.out.println("\n--- Struk Pesanan ---");
+        System.out.println("Produk\t\t\t: " + takeProduct.getProduct());
+        System.out.println("Jumlah Diskon\t\t: " + takeProduct.getDiscount());
+        System.out.println("Jumlah\t\t\t: " + takeProduct.getQuantity());
+        System.out.println("Total Harga Awal\t: " + rupiah.format(takeProduct.calculateTotal()));
+        System.out.println("Total Harga\t\t: " + rupiah.format((takeProduct.calculateTotal() - (takeProduct.calculateTotal() * takeProduct.getTotalDiscount()))));
+        System.out.println("===============================");
     }
 }
