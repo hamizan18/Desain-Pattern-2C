@@ -14,3 +14,7 @@ Diskon: 15.0 - Mouse - 5 - Rp400000.0
 Diskon: 7.0 - Moude non Gaming - 3 - Rp150000.0
 Diskon: 15.0 - Kipas Angin gaming - 3 - Rp2400000.0
 Diskon: 13.0 - Gelas Gaming - 4 - Rp80000.0
+Diskon: 6.0 - Phone Holder - 12 - Rp180000.0
+Diskon: 12.0 - Headset - 5 - Rp475000.0
+Diskon: 12.0 - Earphone - 8 - Rp1200.0
+Diskon: 12.0 - Toples - 100 - Rp200000.0
