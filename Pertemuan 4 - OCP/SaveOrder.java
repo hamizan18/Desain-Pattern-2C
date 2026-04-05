@@ -13,9 +13,10 @@ public class SaveOrder {
         int quantity = takeOrder.getQuantity();
         double total = takeOrder.calculateTotal();
         double discount = takeOrder.getDiscount();
+        String places = takeOrder.getPlaces();
 
         try (FileWriter writer = new FileWriter("orders.txt", true)) {
-            writer.write("Diskon " + discount + "%" + " - " + product + " - " + quantity + " - Rp" + total + "\n");
+            writer.write("Makan di tempat: " + places + " Diskon " + discount + "%" + " - " + product + " - " + quantity + " - Rp" + total + "\n");
             System.out.println("Pesanan telah disimpan!");
         } catch (IOException e) {
             System.out.println("Gagal menyimpan pesanan" + e.getMessage());

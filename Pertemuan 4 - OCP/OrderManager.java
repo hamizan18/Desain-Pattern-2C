@@ -3,7 +3,7 @@ public class OrderManager {
     private int quantity;
     private double price;
     private int discount;
-    private char places;
+    private String places;
 
     public void setProduct(String product) {
         this.product = product;
@@ -21,7 +21,7 @@ public class OrderManager {
         this.discount = discount;
     }
 
-    public void setPlaces(char places) {
+    public void setPlaces(String places) {
         this.places = places;
     }
 
@@ -49,7 +49,7 @@ public class OrderManager {
         return (double) discount / 100;
     }
 
-    public char getPlaces() {
+    public String getPlaces() {
         return places;
     }
 }

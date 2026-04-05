@@ -26,7 +26,7 @@ public class Main {
                 System.out.print("Masukkan harga satuan: ");
                 double price = scanner.nextDouble();
 
-                PlacesConfig.takePlaces();
+                String validateText = PlacesConfig.takePlaces(scanner);
 
                 scanner.nextLine(); // ntuk buang newline
 
@@ -36,6 +36,7 @@ public class Main {
                 order.setPrice(price);
                 order.setQuantity(quantity);
                 order.setDiscount(discount);
+                order.setPlaces(validateText);
 
                 SaveOrder saveOrder = new SaveOrder(order);
                 saveOrder.saveOrder();

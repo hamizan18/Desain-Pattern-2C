@@ -18,6 +18,7 @@ public class PrintReceipt {
         System.out.println("Produk\t\t\t: " + takeProduct.getProduct());
         System.out.println("Jumlah Diskon\t\t: " + takeProduct.getDiscount());
         System.out.println("Jumlah\t\t\t: " + takeProduct.getQuantity());
+        System.out.println("Dine in\t\t: " + takeProduct.getPlaces());
         System.out.println("Harga Awal\t\t: " + rupiah.format(takeProduct.calculateTotal()));
         System.out.println("Total Harga\t\t: " + rupiah.format((takeProduct.calculateTotal() - (takeProduct.calculateTotal() * takeProduct.getTotalDiscount()))));
         System.out.println("===================================");
