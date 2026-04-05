@@ -17,7 +17,7 @@ public class OrderManager {
         this.price = price;
     }
 
-    public void setDiscount(int discount) {
+    public void setDiscount(int discount) { 
         this.discount = discount;
     }
 
