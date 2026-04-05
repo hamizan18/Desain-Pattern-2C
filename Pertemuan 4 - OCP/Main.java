@@ -26,8 +26,7 @@ public class Main {
                 System.out.print("Masukkan harga satuan: ");
                 double price = scanner.nextDouble();
 
-                System.out.print("Makan ditempat(y) or takeaway(n)?: ");
-                char places = scanner.next().charAt(0);
+                PlacesConfig.takePlaces();
 
                 scanner.nextLine(); // ntuk buang newline
 
@@ -37,7 +36,6 @@ public class Main {
                 order.setPrice(price);
                 order.setQuantity(quantity);
                 order.setDiscount(discount);
-                order.setPlaces(places);
 
                 SaveOrder saveOrder = new SaveOrder(order);
                 saveOrder.saveOrder();
