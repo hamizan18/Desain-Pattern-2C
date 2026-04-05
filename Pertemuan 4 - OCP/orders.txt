@@ -18,3 +18,5 @@ Diskon: 6.0 - Phone Holder - 12 - Rp180000.0
 Diskon: 12.0 - Headset - 5 - Rp475000.0
 Diskon: 12.0 - Earphone - 8 - Rp1200.0
 Diskon: 12.0 - Toples - 100 - Rp200000.0
+Makan di tempat: Iya. Diskon 8.0% - HP ROG - 2 - Rp5.0E7
+Makan di tempat: Tidak. Diskon 9.0% - Eskrim Bianglala - 5 - Rp125000.0
