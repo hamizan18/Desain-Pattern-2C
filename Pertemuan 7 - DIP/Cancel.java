@@ -1,3 +1,3 @@
-public interface cancel {
+public interface Cancel {
     void cancel();
 }

@@ -1,3 +1,6 @@
 public interface Movement {
-    void movement();
+    void moveUp();
+    void moveDown();
+    void moveLeft();
+    void moveRight();
 }
