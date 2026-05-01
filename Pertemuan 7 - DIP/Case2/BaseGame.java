@@ -1,6 +1,7 @@
 package Case2;
+
 public class BaseGame {
-    public static void main(String[] args) {
+    public void play() {
         NintendoController nintendo;
         XboxController xbox;
         PSController ps;
