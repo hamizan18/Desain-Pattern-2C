@@ -1,3 +1,4 @@
+package Case2;
 public class BaseGame {
     public static void main(String[] args) {
         NintendoController nintendo;

@@ -1,3 +1,4 @@
+package Case2;
 public class Keyboard implements Movement, Interact, Qwerty, MouseAction {
     @Override
     public void moveDown() {

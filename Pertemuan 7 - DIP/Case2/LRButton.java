@@ -1,3 +1,4 @@
+package Case2;
 public interface LRButton {
     void L1Button();
     void R1Button();

@@ -1,4 +1,5 @@
-public class XboxController implements XAccesibility, Xyba, Analog, Movement, LRButton, Home {
+package Case2;
+public class PSController implements Xyba, Analog, Movement, LRButton, Home {
     @Override
     public void moveDown() {
         System.out.println("Down Arrow Button clicked!\nMoving Down.. ");
@@ -22,21 +23,6 @@ public class XboxController implements XAccesibility, Xyba, Analog, Movement, LR
     @Override
     public void homeButton() {
         System.out.println("Back to home screen");
-    }
-
-    @Override
-    public void shareButton() {
-        System.out.println("Choose where to share");
-    }
-
-    @Override
-    public void viewButton() {
-        System.out.println("View button pressed");
-    }
-
-    @Override
-    public void menuButton() {
-        System.out.println("Opened menu");
     }
 
     @Override

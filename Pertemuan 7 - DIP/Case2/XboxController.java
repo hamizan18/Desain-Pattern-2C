@@ -1,4 +1,5 @@
-public class NintendoController implements Movement, Xyba, Analog, Home, LRButton, NintendoAccesibility {
+package Case2;
+public class XboxController implements XAccesibility, Xyba, Analog, Movement, LRButton, Home {
     @Override
     public void moveDown() {
         System.out.println("Down Arrow Button clicked!\nMoving Down.. ");
@@ -20,6 +21,26 @@ public class NintendoController implements Movement, Xyba, Analog, Home, LRButto
     }
 
     @Override
+    public void homeButton() {
+        System.out.println("Back to home screen");
+    }
+
+    @Override
+    public void shareButton() {
+        System.out.println("Choose where to share");
+    }
+
+    @Override
+    public void viewButton() {
+        System.out.println("View button pressed");
+    }
+
+    @Override
+    public void menuButton() {
+        System.out.println("Opened menu");
+    }
+
+    @Override
     public void YButton() {
         System.out.println("Y Button clicked!\nCharacter Jumping.. ");
     }
@@ -31,7 +52,7 @@ public class NintendoController implements Movement, Xyba, Analog, Home, LRButto
 
     @Override
     public void AButton() {
-        System.out.println("A Button clicked!\nCharacter Slashing! ");
+        System.out.println("A Button clicked!\nCharacter Slashing.. ");
     }
 
     @Override
@@ -47,11 +68,6 @@ public class NintendoController implements Movement, Xyba, Analog, Home, LRButto
     @Override
     public void rightAnalog() {
         System.out.println("Changing Camera Angle.. ");
-    }
-
-    @Override
-    public void homeButton() {
-        System.out.println("Back to home screen");
     }
 
     @Override
@@ -72,20 +88,5 @@ public class NintendoController implements Movement, Xyba, Analog, Home, LRButto
     @Override
     public void R2Button() {
         System.out.println("Filling Stamina.. ");
-    }
-
-    @Override
-    public void subtractionButton() {
-        System.out.println("Subtracting.. ");
-    }
-
-    @Override
-    public void plusButton() {
-        System.out.println("Adding.. ");
-    }
-
-    @Override
-    public void screenshotButton() {
-        System.out.println("Taking screenshot..");
     }
 }
