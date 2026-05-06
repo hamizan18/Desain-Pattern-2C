@@ -28,7 +28,7 @@ class bankAceh implements Counting {
     @Override
     public void total() {
         NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
-        System.out.println("Total pembayaran: " + rupiah.format(fee()));
+        System.out.println("\n[Melalui Bank Aceh]\nTotal pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -48,7 +48,7 @@ class BSI implements Counting {
     @Override
     public void total() {
         NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
-        System.out.println("Total pembayaran: " + rupiah.format(fee()));
+        System.out.println("\n[Melalui bank BSI]\nTotal pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -68,7 +68,7 @@ class Gopay implements Counting {
     @Override
     public void total() {
         NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
-        System.out.println("Total pembayaran: " + rupiah.format(fee()));
+        System.out.println("\n[Melalui Gopay]\nTotal pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -88,7 +88,7 @@ class Dana implements Counting {
     @Override
     public void total() {
         NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
-        System.out.println("Total pembayaran: " + rupiah.format(fee()));
+        System.out.println("\n[Melalui Dana]\nTotal pembayaran: " + rupiah.format(fee()));
     }
 }
 
