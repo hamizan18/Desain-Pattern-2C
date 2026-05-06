@@ -90,7 +90,7 @@ abstract class PaymentProcessing {
 
     public void total() {
         Counting printFee = countFee();
-        printFee.fee();
+        printFee.total();
     }
 }
 
