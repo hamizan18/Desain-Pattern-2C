@@ -1,5 +1,9 @@
 package Tugas;
 
+class varGlobal {
+    public static double sendMoney = 25000;
+}
+
 interface Counting {
     double fee();
     void total();
@@ -93,27 +97,27 @@ abstract class PaymentProcessing {
 class bankAcehCounter extends PaymentProcessing {
     @Override
     public Counting countFee() {
-        return new bankAceh(0);
+        return new bankAceh(varGlobal.sendMoney);
     }
 }
 
 class BSICounter extends PaymentProcessing {
     @Override
     public Counting countFee() {
-        return new BSI(0);
+        return new BSI(varGlobal.sendMoney);
     }
 }
 
 class gopayCounter extends PaymentProcessing {
     @Override
     public Counting countFee() {
-        return new Gopay(0);
+        return new Gopay(varGlobal.sendMoney);
     }
 }
 
 class danaCounter extends PaymentProcessing {
     @Override
     public Counting countFee() {
-        return new Dana(0);
+        return new Dana(varGlobal.sendMoney);
     }
 }
