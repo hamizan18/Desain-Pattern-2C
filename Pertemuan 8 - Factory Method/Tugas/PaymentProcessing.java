@@ -1,4 +1,7 @@
+
 package Tugas;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 class varGlobal {
     public static double sendMoney = 25000;
@@ -19,12 +22,13 @@ class bankAceh implements Counting {
 
     @Override
     public double fee() {
-        return saldo * fee;
+        return saldo - (saldo * fee);
     }
 
     @Override
     public void total() {
-        System.out.printf("Total pembayaran: %.3f%n", fee());
+        NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
+        System.out.println("Total pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -38,12 +42,13 @@ class BSI implements Counting {
 
     @Override
     public double fee() {
-        return saldo * fee;
+        return saldo - (saldo * fee);
     }
 
     @Override
     public void total() {
-        System.out.printf("Total pembayaran: %.3f%n", fee());
+        NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
+        System.out.println("Total pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -57,12 +62,13 @@ class Gopay implements Counting {
 
     @Override
     public double fee() {
-        return saldo * fee;
+        return saldo - (saldo * fee);
     }
 
     @Override
     public void total() {
-        System.out.printf("Total pembayaran: %.3f%n", fee());
+        NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
+        System.out.println("Total pembayaran: " + rupiah.format(fee()));
     }
 }
 
@@ -76,12 +82,13 @@ class Dana implements Counting {
 
     @Override
     public double fee() {
-        return saldo * fee;
+        return saldo - (saldo * fee);
     }
 
     @Override
     public void total() {
-        System.out.printf("Total pembayaran: %.3f%n", fee());
+        NumberFormat rupiah = NumberFormat.getCurrencyInstance(Locale.of("id", "ID"));
+        System.out.println("Total pembayaran: " + rupiah.format(fee()));
     }
 }
 
