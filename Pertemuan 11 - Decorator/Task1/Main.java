@@ -88,36 +88,36 @@ public class Main {
         // Plain Coffee
         Coffee coffee = new PlainCoffee();
         System.out.println("Description: " + coffee.getDescription());
-        System.out.println("Cost: $" + coffee.getCost());
+        System.out.printf("Cost: $%.1f", coffee.getCost());
 
         // Coffee with Milk
         Coffee milkCoffee = new MilkDecorator(new PlainCoffee());
         System.out.println("\nDescription: " + milkCoffee.getDescription());
-        System.out.println("Cost: $" + milkCoffee.getDescription());
+        System.out.printf("Cost: $%.1f", milkCoffee.getCost());
 
         // Coffee with Milk with Sugar
         Coffee sugarMilkCoffee = new SugarDecorator(new MilkDecorator(new PlainCoffee()));
         System.out.println("\nDescription: " + sugarMilkCoffee.getDescription());
-        System.out.println("Cost: $" + sugarMilkCoffee.getCost());
+        System.out.printf("Cost: $%.1f", sugarMilkCoffee.getCost());
 
         // Coffee with Ice
         Coffee longBlackCoffee = new IceDecorator(new PlainCoffee());
         System.out.println("\nDescription: " + longBlackCoffee.getDescription());
-        System.out.println("Cost: $" + longBlackCoffee.getCost());
+        System.out.printf("Cost: $%.1f", longBlackCoffee.getCost());
         
         // Coffee with Sugar with Ice
         Coffee icedCoffee = new IceDecorator(new SugarDecorator(new PlainCoffee()));
         System.out.println("\nDescription: " + icedCoffee.getDescription());
-        System.out.println("Cost: $" + icedCoffee.getCost());
+        System.out.printf("Cost: $%.1f", icedCoffee.getCost());
 
         // Coffee with Milk with Ice
         Coffee icedMilkCoffee = new IceDecorator(new MilkDecorator(new PlainCoffee()));
         System.out.println("\nDescription: " + icedMilkCoffee.getDescription());
-        System.out.println("Cost: $" + icedMilkCoffee.getCost());
+        System.out.printf("Cost: $%.1f", icedMilkCoffee.getCost());
 
         // Coffee with Milk with Sugar with Ice
         Coffee sweetIcedMilkCoffee = new IceDecorator(new SugarDecorator(new MilkDecorator(new PlainCoffee())));
         System.out.println("\nDescription: " + sweetIcedMilkCoffee.getDescription());
-        System.out.println("Cost: $" + sweetIcedMilkCoffee.getCost());
+        System.out.printf("Cost: $%.1f", sweetIcedMilkCoffee.getCost());
     }
 }
