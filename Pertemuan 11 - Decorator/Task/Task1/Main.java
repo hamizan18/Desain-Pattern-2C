@@ -1,4 +1,4 @@
-package Task1;
+package Task.Task1;
 
 interface Coffee {
     String getDescription();
